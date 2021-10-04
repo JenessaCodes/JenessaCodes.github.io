@@ -18,12 +18,14 @@ h2 {
     font-weight: 300;
 } 
 
-h2 p {
+h2>p {
     color: white;
 }
 
 img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 footer {
