@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: black;
     font-family: Helvetica;
     text-align: center;
@@ -24,10 +27,11 @@ h2+p {
 
 img {
     border-radius: 50%;
-    width: 150px;
+    width: 300px;
     height: auto;
 }
 
 footer {
     background-color: palegreen;
+    margin-top: auto;
 }
