@@ -5,24 +5,27 @@ body {
     background-color: black;
     font-family: Helvetica;
     text-align: center;
+    list-style-position: inside;
 }
 
 nav {
-    color: thistle;
+    color: orange;
+    background-color: paleturquoise;
 }
 
 h1 {
-    color: mintcream;
+    color: paleturquoise;
     font-weight: 500;
 }
 
 h2 {
-    color: mistyrose;
-    font-weight: 300;
+    color: paleturquoise;
+    font-weight: 400;
 } 
 
 h2+p {
     color: white;
+    font-weight: 200;
 }
 
 img {
