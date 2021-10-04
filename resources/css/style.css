@@ -8,14 +8,15 @@ body {
     list-style-position: inside;
 }
 
-nav {
+nav, a:link, a:hover, a:visited, a:active {
     color: orange;
 }
 
 h1 {
     color: palegreen;
-    background-color: orange;
+    background-color: white;
     font-weight: 500;
+    margin-top: auto;
 }
 
 h2 {
