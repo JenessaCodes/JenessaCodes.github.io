@@ -13,14 +13,14 @@ nav, a:link, a:hover, a:visited, a:active {
 }
 
 h1 {
-    color: palegreen;
-    background-color: white;
+    color: black;
+    background-color: palegreen;
     font-weight: 500;
     margin-top: auto;
 }
 
 h2 {
-    color: paleturquoise;
+    color: palegreen;
     font-weight: 400;
 } 
 
