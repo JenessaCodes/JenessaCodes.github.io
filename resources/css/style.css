@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(52, 61, 61);
     font-family: Helvetica;
     text-align: center;
     list-style-position: inside;
