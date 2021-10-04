@@ -10,6 +10,7 @@ body {
 
 nav, a:link, a:hover, a:visited, a:active {
     color: orange;
+    font-weight: 200;
 }
 
 h1 {
