@@ -13,7 +13,7 @@ nav, a:link, a:hover, a:visited, a:active {
 }
 
 h1 {
-    color: black;
+    color: rgb(52, 61, 61);
     background-color: palegreen;
     font-weight: 500;
     margin-top: auto;
