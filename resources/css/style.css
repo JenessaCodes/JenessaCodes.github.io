@@ -11,6 +11,10 @@ body {
 nav, a:link, a:hover, a:visited, a:active {
     color: orange;
     font-weight: 200;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em
 }
 
 h1 {
@@ -28,6 +32,10 @@ h2 {
 h2+p {
     color: white;
     font-weight: 200;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em
 }
 
 img {
@@ -43,8 +51,10 @@ footer {
 }
 
 div {
+    color: white;
+    font-weight: 200;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 20em
+    width: 40em
 }
