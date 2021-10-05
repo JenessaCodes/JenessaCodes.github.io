@@ -14,7 +14,7 @@ nav, a:link, a:hover, a:visited, a:active {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 50em
+    width: 8em
 }
 
 h1 {
@@ -60,8 +60,8 @@ div {
 }
 
 h3 {
+    color: orange;
     font-weight: 300;
-
 }
 
 h4 {
