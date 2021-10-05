@@ -41,3 +41,8 @@ footer {
     color: rgb(52, 61, 61);
     margin-top: auto;
 }
+
+div {
+    display: inline-block;
+    text-align: left;
+}
