@@ -19,9 +19,7 @@ nav, a:link, a:hover, a:visited, a:active {
 
 h1 {
     color: rgb(52, 61, 61);
-    background-color: palegreen;
     font-weight: 500;
-    margin-top: auto;
 }
 
 h2 {
@@ -71,7 +69,12 @@ ul {
     font-weight: 200;
 }
 
-header>a {
+#Main-Github {
     text-align: left;
     color: rgb(52, 61, 61);
+}
+
+#top-block {
+    margin-top: auto;
+    background-color: palegreen;
 }
