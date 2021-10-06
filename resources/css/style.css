@@ -29,7 +29,7 @@ h2 {
     font-weight: 400;
 } 
 
-h2 p {
+section>p {
     color: white;
     font-weight: 200;
     margin-left: auto;
