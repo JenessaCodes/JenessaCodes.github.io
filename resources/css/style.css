@@ -71,7 +71,7 @@ ul {
     font-weight: 200;
 }
 
-span {
+header>a {
     text-align: left;
     color: rgb(52, 61, 61);
 }
