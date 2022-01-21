@@ -1,79 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/*Color Palette
+rgba(52, 61, 61, 1)
+rgba(133, 168, 168, 1)
+
+$isabelline: rgba(247, 243, 242, 1)
+
+$maximum-blue-purple: rgba(149, 163, 223, 1);
+$bistre: rgba(43, 28, 21, 1);
+$raw-umber: rgba(125, 99, 74, 1);
+$copper-crayola: rgba(211, 137, 98, 1);
+$black: rgba(0, 0, 0, 1);
+
+rgba(74, 83, 126, 1)*/
+
+/*Universal Rules*/
+html {
+    font-size: 16px;
+    color: black;
+    background-image: url("/resources/images/cream-wall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(52, 61, 61);
-    font-family: Helvetica;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     text-align: center;
     list-style-position: inside;
 }
 
-nav, a:link, a:hover, a:visited, a:active {
-    color: orange;
-    font-weight: 200;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20em
-}
-
-h1 {
-    color: palegreen;
-    font-weight: 500;
-}
-
 h2 {
-    color: palegreen;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 2rem;
 } 
 
-section>p {
-    color: white;
-    font-weight: 200;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
-img {
+h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/*Header*/
+header {
+    background-color: rgba(211, 137, 98, 1);
+    display: flex;
+    align-items: center;
+}
+
+header a:link, header a:hover, header a:visited, header a:active {
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header #logo {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+}
+
+header #logo img {
+    width: 3rem;
+}
+
+header #social {
+    flex: 1;
+}
+
+header #social img {
+    width: 1.5rem;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    font-weight: 700;
+}
+
+/*Banner Section*/
+h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#banner img {
     width: 300px;
     height: auto;
 }
 
-footer {
-    background-color: palegreen;
-    color: rgb(52, 61, 61);
-    margin-top: auto;
+/*About Me Section*/
+#about-me {
+    background-color: rgb(255, 228, 213);
 }
 
-div {
-    color: white;
+/*Skills Section*/
+
+#skills {
+    display: flex;
+    justify-content: center;
+}
+
+#skills img {
+    width: 10rem;
+}
+
+/*Projects Section*/
+#projects {
+    background-color: rgb(255, 228, 213);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25rem);
+    gap: 2rem;
+    justify-content: center;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
 }
 
-h3 {
-    color: orange;
+#projects .project {
+    background-color: rgba(247, 243, 242, 1);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    overflow: hidden;
+}
+
+#projects .image {
+   flex: 1;
+   border-radius: .5rem;
+   overflow: hidden; 
+   margin-right: .5rem;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#projects .content {
+    flex: 2;
+}
+
+#projects a:link, #projects a:hover, #projects a:visited, #projects a:active {
+    color: black;
     font-weight: 300;
+    text-decoration: none;
 }
 
-h4 {
-    font-weight: 250;
-    font-style: italic;
+/*Resume Section*/
+
+/*Footer*/
+footer {
+    background-color: rgba(211, 137, 98, 1);
+    color: black;
 }
 
-ul {
-    font-weight: 200;
-}
-
-#Main-Github {
-    text-align: left;
-    color: rgb(52, 61, 61);
-}
-
-#top-block {
-    margin-top: auto;
-    background-color: palegreen;
+footer img {
+    width: 2rem;
 }
