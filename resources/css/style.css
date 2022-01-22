@@ -41,11 +41,6 @@ h3 {
     font-size: 1.5rem;
 }
 
-h4 {
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 strong {
     font-weight: 700;
 }
@@ -58,6 +53,7 @@ emphasis {
 header {
     background-color: rgba(211, 137, 98, 1);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: .5rem;
 }
@@ -76,7 +72,7 @@ header a:hover {
 header #logo {
     flex: 1;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 header #logo img {
@@ -90,6 +86,10 @@ header #social {
 header #social img {
     width: 1.5rem;
     margin: 0 .25rem;
+}
+
+header button {
+    display: none;
 }
 
 header nav {
@@ -108,6 +108,36 @@ header a {
     font-weight: 700;
 }
 
+@media screen and (max-width: 1050px){
+    header nav {
+        display: none;
+    }
+
+    header nav.show {
+        display: block;
+        min-width: 100%;
+    }
+
+    header nav.show ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 2rem;
+        align-items: flex-end;
+    }
+
+    header button {
+        display: block;
+        background-color: rgba(211, 137, 98, 1);
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header button img {
+        width: 2rem;
+    }
+}
+
 /*Banner Section*/
 #banner {
     padding: 5rem;
@@ -117,7 +147,8 @@ header a {
 h1 {
     color: black;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
+    padding: 1rem;
 }
 
 #banner h2 {
@@ -125,7 +156,7 @@ h1 {
 }
 
 #banner img {
-    width: 300px;
+    width: 25rem;
     height: auto;
 }
 
@@ -138,13 +169,16 @@ h1 {
 
 /*Skills Section*/
 #skills {
-    padding: 5rem 1rem;
+    padding: 5rem 5rem;
     line-height: 2rem;
 }
 
 #skills .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    gap: 2rem;
     justify-content: center;
+    text-align: left;
 }
 
 #skills .skill {
@@ -152,7 +186,7 @@ h1 {
 }
 
 #skills img {
-    width: 10rem;
+    width: 7rem;
 }
 
 #skills .bar {
@@ -242,7 +276,7 @@ h1 {
    flex: 1;
    border-radius: .5rem;
    overflow: hidden; 
-   margin-right: .5rem;
+   margin-right: 1rem;
    height: 7rem;
 }
 
@@ -260,6 +294,10 @@ h1 {
     color: black;
     font-weight: 300;
     text-decoration: none;
+}
+
+#projects .description {
+    font-weight: 400;
 }
 
 #projects #repositories{
