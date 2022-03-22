@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 /*Color Palette
 rgba(52, 61, 61, 1)
 rgba(133, 168, 168, 1)
@@ -15,368 +15,379 @@ rgba(74, 83, 126, 1)*/
 
 /*Universal Rules*/
 html {
-    font-size: 16px;
-    color: black;
-    background-image: url("/resources/images/cream-wall.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-size: 16px;
+  color: black;
+  background-image: url("/resources/images/cream-wall.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    list-style-position: inside;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  list-style-position: inside;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 4rem;
-} 
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
 
 h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 emphasis {
-    font-style: italic;
+  font-style: italic;
 }
 
 /*Header*/
 header {
-    background-color: rgba(211, 137, 98, 1);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: .5rem;
+  background-color: rgba(211, 137, 98, 1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-header a:link, header a:visited, header a:active {
-    color: black;
-    font-weight: 700;
-    font-size: 1.75rem;
-    text-decoration: none;
+header a:link,
+header a:visited,
+header a:active {
+  color: black;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 header #logo {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 header #logo img {
-    width: 3rem;
+  width: 3rem;
 }
 
 header #social {
-    flex: 1;
+  flex: 1;
 }
 
 header #social img {
-    width: 1.5rem;
-    margin: 0 .25rem;
+  width: 1.5rem;
+  margin: 0 0.25rem;
 }
 
 header button {
-    display: none;
+  display: none;
 }
 
 header nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 header ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 1050px){
-    header nav {
-        display: none;
-    }
+@media screen and (max-width: 1050px) {
+  header nav {
+    display: none;
+  }
 
-    header nav.show {
-        display: block;
-        min-width: 100%;
-    }
+  header nav.show {
+    display: block;
+    min-width: 100%;
+  }
 
-    header nav.show ul {
-        display: flex;
-        flex-direction: column;
-        line-height: 2rem;
-        align-items: flex-end;
-    }
+  header nav.show ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    align-items: flex-end;
+  }
 
-    header button {
-        display: block;
-        background-color: rgba(211, 137, 98, 1);
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-    }
+  header button {
+    display: block;
+    background-color: rgba(211, 137, 98, 1);
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    header button img {
-        width: 2rem;
-    }
+  header button img {
+    width: 2rem;
+  }
 }
 
 /*Banner Section*/
 #banner {
-    padding: 5rem;
-    line-height: 4rem;
+  padding: 5rem;
+  line-height: 4rem;
 }
 
 h1 {
-    color: black;
-    font-weight: 700;
-    font-size: 4rem;
-    padding: 1rem;
+  color: black;
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 1rem;
 }
 
 #banner h2 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #banner img {
-    width: 25rem;
-    height: auto;
+  width: 25rem;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
-    #banner {
-        padding: 5rem 2rem;
-    }
+  #banner {
+    padding: 5rem 2rem;
+  }
 
-    #banner img {
-        width: 15rem;
-        height: auto;
-    }
+  #banner img {
+    width: 15rem;
+    height: auto;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    #banner h2 {
-        font-size: 1.5rem;
-    }
+  #banner h2 {
+    font-size: 1.5rem;
+  }
 
-    #banner h3 {
-        font-size: 1.25rem;
-    }
+  #banner h3 {
+    font-size: 1.25rem;
+  }
 }
 
 /*About Me Section*/
 #about-me {
-    background-color: rgb(255, 228, 213);
-    padding: 5rem;
-    line-height: 2rem;
+  background-color: rgb(255, 228, 213);
+  padding: 5rem;
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 500px) {
-    #about-me {
-        padding: 2rem;
-    }
+  #about-me {
+    padding: 2rem;
+  }
 }
 
 /*Skills Section*/
 #skills {
-    padding: 5rem 5rem;
-    line-height: 2rem;
+  padding: 5rem 5rem;
+  line-height: 2rem;
 }
 
 #skills .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 15rem);
-    gap: 2rem;
-    justify-content: center;
-    text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
 }
 
 #skills .skill {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 #skills img {
-    width: 7rem;
+  width: 7rem;
 }
 
 #skills .bar {
-    width: 100%;
-    background-color: lightgrey;
-    height: .5rem;
-    border-radius: .5rem;
-    overflow: hidden;
+  width: 100%;
+  background-color: lightgrey;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#skills #percentage-react {
+  width: 50%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-html {
-    width: 60%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 60%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-css {
-    width: 60%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 60%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-js {
-    width: 40%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 40%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-git {
-    width: 60%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 60%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-github {
-    width: 60%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 60%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-vscode {
-    width: 60%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 60%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills #percentage-canva {
-    width: 90%;
-    background-color: rgba(149, 163, 223, 1);
-    height: .5rem;
-    border-radius: .5rem;
+  width: 90%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 #skills .certificate img {
-    width: 2rem;
+  width: 2rem;
 }
 
 /*Projects Section*/
 #projects {
-    background-color: rgb(255, 228, 213); 
-    padding: 5rem 1rem;
+  background-color: rgb(255, 228, 213);
+  padding: 5rem 1rem;
 }
 
 #projects .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 25rem);
-    gap: 2rem;
-    justify-content: center;
-    text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25rem);
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
 }
 
 #projects .project {
-    background-color: rgba(247, 243, 242, 1);
-    border-radius: 1rem;
-    padding: 1rem;
-    display: flex;
-    overflow: hidden;
+  background-color: rgba(247, 243, 242, 1);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  overflow: hidden;
 }
 
 #projects .image {
-   flex: 1;
-   border-radius: .5rem;
-   overflow: hidden; 
-   margin-right: 1rem;
-   height: 7rem;
+  flex: 1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  height: 7rem;
 }
 
 #projects img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #projects .content {
-    flex: 2;
+  flex: 2;
 }
 
-#projects a:link, #projects a:hover, #projects a:visited, #projects a:active {
-    color: black;
-    font-weight: 300;
-    text-decoration: none;
+#projects a:link,
+#projects a:hover,
+#projects a:visited,
+#projects a:active {
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 #projects .description {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-#projects #repositories{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
+#projects #repositories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
-#projects #repositories img{
-    width: 1rem;
-    margin: 0 .1rem;
+#projects #repositories img {
+  width: 1rem;
+  margin: 0 0.1rem;
 }
 
 #projects #repositories span {
-    margin: 0 .1rem;
+  margin: 0 0.1rem;
 }
 
 @media screen and (max-width: 500px) {
-    #projects .container {
-        grid-template-columns: repeat(auto-fill, 20rem);
-    }
+  #projects .container {
+    grid-template-columns: repeat(auto-fill, 20rem);
+  }
 }
 /*Resume Section*/
 
 #resume {
-    padding: 5rem 1rem;
-    line-height: 2rem;
+  padding: 5rem 1rem;
+  line-height: 2rem;
 }
 
 #resume h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 #resume img {
-    width: 1rem;
+  width: 1rem;
 }
-
 
 /*Footer*/
 footer {
-    background-color: rgba(211, 137, 98, 1);
-    color: black;
-    padding: 2rem 1rem;
+  background-color: rgba(211, 137, 98, 1);
+  color: black;
+  padding: 2rem 1rem;
 }
 
 footer img {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 footer p {
-    font-size: .75rem;
+  font-size: 0.75rem;
 }
