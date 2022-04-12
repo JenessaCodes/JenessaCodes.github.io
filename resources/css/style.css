@@ -185,15 +185,20 @@ h1 {
   }
 }
 
-/*About Me Section*/
-#about-me {
+/*I'm Looking Section*/
+#im-looking {
   background-color: rgb(255, 228, 213);
   padding: 5rem;
   line-height: 2rem;
 }
 
+#im-looking ul {
+  list-style: upper-roman;
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 500px) {
-  #about-me {
+  #im-looking {
     padding: 2rem;
   }
 }
