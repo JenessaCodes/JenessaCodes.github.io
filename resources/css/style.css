@@ -233,6 +233,13 @@ h1 {
   overflow: hidden;
 }
 
+#skills #percentage-solidity {
+  width: 40%;
+  background-color: rgba(149, 163, 223, 1);
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 #skills #percentage-react {
   width: 50%;
   background-color: rgba(149, 163, 223, 1);
